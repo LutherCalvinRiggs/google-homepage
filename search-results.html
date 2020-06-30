@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="description" content="codepen.io Tribute Page">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Luther Calvin Riggs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Style Sheets -->
+        
+        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+            }
+
+            #nav-bar{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+            #nav-top{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 10px;
+            }
+
+            #nav-left{
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+            }
+
+            #google-logo{
+                width: 100px;
+                height: auto;
+            }
+
+            #search-container{
+                width: 700px;
+                margin-left: 50px;
+            }
+
+            #nav-right{
+                display: flex;
+                align-items: center;
+                padding-right: 20px;
+            }
+
+            #nav-bottom{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                border-bottom: 1px solid lightgrey;
+            }
+
+            #search-options{
+                width: 500px;
+                padding-left: 200px;
+            }
+
+            #search-options a:active{
+                padding: 6px;
+                border-bottom: 3px solid blue;
+            }
+
+            .link-list{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .nav-btn{
+                padding: 10px 0;
+            }
+
+            .nav-btn a{
+                padding: 0px 10px;
+                text-decoration: none;
+            }
+
+            .results{
+                /* padding-top: 50px; */
+                padding-left: 225px;
+            }
+
+            #result-metrics{
+                margin-bottom: 30px;
+            }
+
+            .search-result{
+                display: block;
+                margin-bottom: 50px;
+            }
+
+            #address{
+                font-size: 16px;
+                color: black;
+                padding-bottom: 3px;
+            }
+
+            #title{
+                font-size: 32px;
+                padding-bottom: 10px;
+                text-decoration: none;
+            }
+
+            #title:hover{
+                text-decoration: underline;
+            }
+
+            #description{
+                font-size: 14px;
+                color: grey;
+                padding-bottom: 3px;
+            }
+
+            footer{
+                width: 100%;
+                background-color: lightgrey;
+                padding: 20px;
+            }
+
+            #footer-nav{
+                display: flex;
+                flex-direction: column;
+                padding-left: 225px;
+            }
+
+            #location-info{
+                padding-left: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <nav id="nav-bar">
+            <div id="nav-top">
+                <div id="nav-left">
+                    <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+
+                    <div id="search-container">
+                        <label for="search">Search</label>
+                        <input id="search-box" type="text" name="search">
+                    </div>
+                </div>
+
+                <div id="nav-right">
+                    <ul id="google-util" class="link-list">
+                        <li class="nav-btn">
+                            <a href="#">G-Services</a>
+                        </li>
+                        <li class="nav-btn">
+                            <a href="#">Account </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="nav-bottom">
+                <ul id="search-options" class="link-list">
+                    <li class="nav-btn">
+                        <a href="#">All</a>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="#">Images</a>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="#">Shopping</a>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="#">Videos</a>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+
+                <ul id="search-util" class="link-list">
+                    <li class="nav-btn">
+                        <a href="#">Settings</a>
+                    </li>
+                    <li class="nav-btn">
+                        <a href="#">Tools</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="results">
+                <p id="result-metrics"> About 504,000 results (0.40 seconds)</p>
+
+                <div class="search-result">
+                    <p id="address">www.website.com</p>
+                    <a id="title" href="#"><h2 >Title, Sub-title</h2></a>
+                    <p id="description">Site description.</p>
+                </div>
+
+                <div class="search-result">
+                    <p id="address">www.website.com</p>
+                    <a id="title" href="#"><h2 >Title, Sub-title</h2></a>
+                    <p id="description">Site description.</p>
+                </div>
+
+                <div class="search-result">
+                    <p id="address">www.website.com</p>
+                    <a id="title" href="#"><h2 >Title, Sub-title</h2></a>
+                    <p id="description">Site description.</p>
+                </div>
+
+                <div class="search-result">
+                    <p id="address">www.website.com</p>
+                    <a id="title" href="#"><h2 >Title, Sub-title</h2></a>
+                    <p id="description">Site description.</p>
+                </div>
+
+                <div class="search-result">
+                    <p id="address">www.website.com</p>
+                    <a id="title" href="#"><h2 >Title, Sub-title</h2></a>
+                    <p id="description">Site description.</p>
+                </div>
+
+                <div class="search-result">
+                    <p id="address">www.website.com</p>
+                    <a id="title" href="#"><h2 >Title, Sub-title</h2></a>
+                    <p id="description">Site description.</p>
+                </div>
+
+                <div class="search-result">
+                    <p id="address">www.website.com</p>
+                    <a id="title" href="#"><h2 >Title, Sub-title</h2></a>
+                    <p id="description">Site description.</p>
+                </div>
+
+                <div class="search-result">
+                    <p id="address">www.website.com</p>
+                    <a id="title" href="#"><h2 >Title, Sub-title</h2></a>
+                    <p id="description">Site description.</p>
+                </div>
+
+            </div>
+        </main>
+
+        <footer id="footer-nav">
+            <div id="location-info">
+                <p><strong>Astoria, New York</strong> - From your internet address - Use precise location - Learn more</p>
+            </div>
+            
+            <ul id="nav-bar-footer" class="link-list">
+                <li class="nav-btn">
+                    <a href="#">Help</a>
+                </li>
+                <li class="nav-btn">
+                    <a href="#">Sent feedback </a>
+                </li>
+                <li class="nav-btn">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="nav-btn">
+                    <a href="#">Terms</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
